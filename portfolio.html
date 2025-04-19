@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arshitha Rakam | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #fefefe;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    nav {
+      background-color: #002b5c;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    nav h1 {
+      color: white;
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #5eb9ff;
+    }
+
+    header {
+      background: linear-gradient(to right, #003366, #005580);
+      color: white;
+      padding: 120px 20px 100px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h2 {
+      font-size: 38px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 15px;
+    }
+
+    .typing {
+      display: inline-block;
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+      font-size: 42px;
+      font-weight: 700;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    section {
+      padding: 60px 10%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 28px;
+      color: #003366;
+      margin-bottom: 25px;
+      border-left: 5px solid #5eb9ff;
+      padding-left: 15px;
+    }
+
+    section p, li {
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    #skills ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .project {
+      background-color: #fff;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-left: 5px solid #5eb9ff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    }
+
+    .project h3 {
+      font-size: 22px;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .contact-info a {
+      color: #003366;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      color: #5eb9ff;
+    }
+
+    footer {
+      background-color: #002b5c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Arshitha Rakam</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h2><span class="typing">Hi, I'm Arshitha Rakam</span></h2>
+    <p>B.Tech CSE Student | Enthusiast in AI, DSA, and Software Development</p>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Computer Science student with a strong passion for building meaningful solutions using technology. I enjoy solving complex problems through code, and I have a growing interest in Artificial Intelligence and software development. I'm currently exploring deep learning, explainability in AI, and participating in hackathons to sharpen my real-world problem-solving skills.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming Languages: Python, Java, C, C++</li>
+      <li>Frameworks & Tools: FastAI, Flask, SHAP, Grad-CAM</li>
+      <li>Frontend Development: HTML, CSS, JavaScript</li>
+      <li>Problem Solving & DSA</li>
+      <li>Version Control: Git, GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>SCP Chatbot</h3>
+      <p>Developed an intelligent chatbot in Python to provide automated responses about my diploma college’s facilities, fee structure, admission process, and general FAQs. It was my first exposure to natural language processing and user interaction systems.</p>
+    </div>
+
+    <div class="project">
+      <h3>EduQuest – Interactive Coding Platform</h3>
+      <p>Built during a national-level hackathon, EduQuest is a web-based platform designed to help students (8th grade & above) learn programming in an interactive and engaging manner through animations and visual content. It supports multiple programming languages and tracks learning progress.</p>
+    </div>
+
+    <div class="project">
+      <h3>Explainable AI for Retinal Disease Detection</h3>
+      <p>This is my ongoing B.Tech second-year project where I'm building a model using FastAI to detect eye diseases from retinal images. The model includes explainable AI components (Grad-CAM & SHAP) to enhance transparency in medical AI decision-making. It aims to support medical professionals with interpretable results.</p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>B.Tech in Computer Science Engineering</strong><br>G. Narayanamma Institute of Technology, 2024–2027</p>
+    <p><strong>Diploma in Engineering</strong><br>Completed in 2024</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:rakamarshitha59@gmail.com">rakamarshitha59@gmail.com</a></p>
+      <p>LinkedIn: <a href="#" target="_blank">[Add LinkedIn URL]</a></p>
+      <p>GitHub: <a href="https://github.com/Arshitha515" target="_blank">https://github.com/Arshitha515</a></p>
+      <p>Resume: <a href="#" target="_blank">[Add Resume Link]</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Arshitha Rakam. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
